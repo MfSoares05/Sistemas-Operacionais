@@ -1,0 +1,47 @@
+Primeira Atividade (primeira folha)
+
+1. Por que uma empresa desejaria converter seu mainframe em um servidor de rede? Quais os benefícios para a empresa?
+
+Uma empresa pode querer transformar o mainframe em servidor de rede porque isso permite que o mainframe atenda mais usuários e aplicações ao mesmo tempo, usando a estrutura já existente. 
+Os benefícios incluem reduzir custos (não precisa comprar vários servidores novos), melhorar o acesso dos funcionários e clientes aos sistemas da empresa e aproveitar a segurança e 
+estabilidade que o mainframe já oferece. Além disso, tudo fica centralizado, o que facilita manutenção.
+
+
+
+2. O que uma empresa precisa fazer para tornar seus bancos de dados e aplicações, baseados em computadores centrais, acessíveis a funcionários e clientes que possuem navegadores de rede?
+
+Ela precisa adaptar esses sistemas do mainframe para versões que possam ser acessadas via web, normalmente usando middleware, APIs ou aplicações que convertam as informações do mainframe 
+em páginas acessíveis pelo navegador. Também é preciso configurar servidores web e garantir segurança no acesso externo. Em outras palavras, transformar aplicações antigas em aplicações
+web que funcionam para qualquer usuário com navegador.
+
+
+
+3. Quando uma empresa deve utilizar um mainframe como servidor de rede em vez de usar exclusivamente uma rede baseada em servidores PCs?
+
+Isso faz sentido quando a empresa tem grande volume de dados, muitas transações simultâneas ou precisa de muita confiabilidade. Mainframes são muito estáveis e 
+suportam cargas que vários PCs talvez não suportariam. Então, quando existe demanda muito grande e crítica, o mainframe como servidor de rede é mais eficiente e seguro.
+Já redes baseadas em PCs servem para cargas menores.
+
+
+Segunda Atividade (Segunda folha)
+
+1. Por que companhias como a Egghead e a EarthLink estão optando por executar suas aplicações empresariais em Unix ou outros sistemas operacionais, em vez do Windows NT, e por que não esperar pelo Windows 2000?
+
+Elas preferem Unix porque ele é mais estável, seguro e já tinha boa reputação para aplicações de missão crítica. O Windows NT ainda tinha problemas de confiabilidade na época, e esperar pelo 
+Windows 2000 poderia atrasar a empresa, já que sistemas operacionais novos normalmente precisam de testes e ajustes. Unix já era maduro e testado, então era uma opção mais segura.
+
+
+
+2. Por que a Aspect Telecommunications é capaz de comprar software aplicativo baseado no que ele faz para a empresa, e não baseado em qual sistema operacional ele é executado?
+
+Porque os softwares modernos já estavam sendo desenvolvidos de forma mais universal, usando padrões como Java ou soluções multiplataforma. Isso significa que o foco passa a ser a função do software
+(o que ele resolve), e não o sistema operacional. A empresa só quer que a aplicação resolva o problema dela, independente se roda em Unix, Windows ou outro sistema.
+
+
+
+3. Quais estratégias de negócios a Microsoft poderia adotar para recapturar o sucesso anterior do Windows NT? O que os concorrentes da Microsoft devem fazer para aproveitar sua oportunidade atual de negócios?
+
+A Microsoft poderia melhorar a estabilidade e segurança do sistema, investir em compatibilidade com softwares empresariais e talvez adotar padrões mais abertos. Outra estratégia seria oferecer melhores
+ferramentas de gerenciamento e suporte.
+Já os concorrentes deveriam aproveitar para destacar suas vantagens, como confiabilidade, desempenho e suporte multiplataforma, além de conquistar empresas que estavam cansadas das limitações do Windows NT.
+Ou seja, investir em inovação e mostrar que suas soluções são mais maduras.
