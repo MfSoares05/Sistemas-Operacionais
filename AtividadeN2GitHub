@@ -1,0 +1,112 @@
+1. Comparação de Finalidade e Acesso: Qual a principal diferença na finalidade e na forma de acesso entre o Monitor de Atividade e o top? Como o Gerenciador de Tarefas se alinha com essa distinção?
+
+A principal diferença é que o Monitor de Atividade (macOS) e o Gerenciador de Tarefas (Windows) são ferramentas gráficas, feitas para facilitar a visualização do sistema de forma visual.
+Já o top funciona pelo terminal do Linux, totalmente em modo texto.
+O Monitor de Atividade e o Gerenciador de Tarefas são mais voltados para uso comum, com interface gráfica, enquanto o top é mais usado em ambientes sem interface, como servidores.
+
+
+
+2. Monitoramento de CPU: Como você usaria cada uma das três ferramentas para identificar qual processo está consumindo a maior parte da CPU em tempo real? Descreva os passos básicos para cada sistema operacional.
+
+Monitor de Atividade (macOS):
+
+Abrir o aplicativo.
+Clicar na aba “CPU”.
+Ordenar por “% CPU”.
+Gerenciador de Tarefas (Windows):
+Pressionar Ctrl + Shift + Esc.
+Ir em “Processos”.
+Ordenar pela coluna “CPU”.
+top (Linux):
+Abrir o terminal e digitar top.
+Ele já mostra os processos ordenados pelo uso de CPU.
+Pode usar P para ordenar por CPU.
+
+
+
+3. Análise de Memória: O Monitor de Atividade e o Gerenciador de Tarefas apresentam detalhes sobre o uso de memória. Como o top em Linux exibe essa informação e quais métricas são mais relevantes para entender o consumo de memória de um processo?
+
+No top, as informações de memória ficam na parte superior, mostrando:
+
+Mem (RAM usada, livre, buffers)
+Swap
+
+Para cada processo, aparecem métricas como:
+
+RES (memória real usada)
+VIRT (memória total virtual)
+SHR (memória compartilhada)
+%MEM (porcentagem usada)
+As mais importantes para entender o consumo real são RES e %MEM.
+
+
+
+4. Processos e PIDs: Explique a importância do PID e como ele é exibido em cada ferramenta. Como você usaria o PID para encerrar um processo que não responde?
+
+O PID é o identificador do processo, essencial para localizar e encerrar processos.
+Monitor de Atividade: mostra o PID em uma coluna.
+Gerenciador de Tarefas: também mostra (às vezes precisa ativar a coluna).
+top: mostra o PID na primeira coluna.
+
+Para encerrar:
+
+macOS: selecionar e clicar no botão “X”.
+Windows: selecionar e clicar “Finalizar tarefa”.
+Linux: usar kill PID (ou kill -9 PID se for forçado).
+
+
+
+5. Diferença na Interface: Quais são as principais diferenças de interface entre as três ferramentas? Qual é mais orientada a texto e qual é mais visual?
+
+O Monitor de Atividade tem uma interface super visual, cheia de abas e gráficos.
+O Gerenciador de Tarefas também é visual, mas mais simples.
+O top é totalmente baseado em texto e roda no terminal.
+A mais orientada a comandos é o top.
+As mais visuais são o Monitor de Atividade e o Gerenciador de Tarefas.
+
+
+
+6. Monitoramento de Rede: Como o Monitor de Atividade e o Gerenciador de Tarefas permitem inspecionar tráfego de rede? E qual comando é usado no Linux para algo parecido?
+
+Monitor de Atividade:
+
+Aba “Rede” mostrando envio e recebimento por processo.
+
+Gerenciador de Tarefas:
+
+Aba “Desempenho” → Rede, ou coluna de rede na aba Processos.
+No Linux, ferramentas parecidas são:
+nethogs (mostra uso de rede por processo)
+iftop (mostra tráfego em tempo real)
+ou ss/netstat para conexões.
+
+
+
+7. Análise de Disco: Qual a importância de monitorar a atividade de disco e como obter essa informação no Linux?
+
+Monitorar o disco é importante porque processos podem ficar lentos devido a muita leitura ou escrita.
+
+Monitor de Atividade: tem aba “Disco”.
+Gerenciador de Tarefas: tem coluna e seção “Disco”.
+No Linux, o top não mostra isso bem, então usa-se:
+iotop (atividade de disco por processo)
+iostat (estatísticas gerais)
+
+
+
+8. Hierarquia de Processos: Como cada ferramenta lida com a hierarquia de processos e como exibir isso no Linux?
+
+O Monitor de Atividade e o Gerenciador de Tarefas mostram os processos, mas não mostram bem a hierarquia pai–filho.
+
+No Linux:
+O top não mostra por padrão.
+O comando pstree mostra a hierarquia em árvore.
+O htop também mostra a hierarquia com indentação.
+
+
+
+9. Uso em Servidores vs. Desktops: Qual ferramenta é mais adequada para servidores e por quê?
+
+A melhor ferramenta para servidores é o top (ou htop), porque servidores normalmente não têm interface gráfica.
+Ele funciona direto no terminal, gasta poucos recursos e é fácil de usar remotamente (SSH).
+Já o Monitor de Atividade e o Gerenciador de Tarefas são melhores em desktops por serem gráficos e mais fáceis visualmente.
